@@ -1,4 +1,20 @@
-pygments: true
+# Standar configuration of _config.yml file. TODO: Improve
+# the configuration in order to make more customizable site.
+
+
+# Customizable fields
+username: "Iron Man"
+github_repository: ""
+github_user: ""
+twitter_user: ""
+
+url: "127.0.0.1:4000" # In blank to production site.
+
+# Default fields. Initially, maintain these fields.
+highlighter: rouge
 permalink: /post/:title
-exclude: ['Gemfile','Gemfile.lock','Rakefile','.git']
+exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', '.git']
 paginate: 4
+plugins: [jekyll-paginate]
+sass_dir: ./_sass
+baseurl: ""

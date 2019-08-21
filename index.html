@@ -1,12 +1,11 @@
 ---
-title: Exemplar
-nav: projects
+title: Exemplar template
+nav: Template
 subnav: exemplar-home
 layout: default
 ---
 <p>
-  This is an example of the default theme I use for my jekyll sites. This
-  theme is used for my <a href="http://tybenz.com">blog</a> and my project sites.
+This is an example of the default theme I use for my jekyll sites. This theme is used for my blog and my project sites.
 </p>
 
 <p>
@@ -18,32 +17,34 @@ layout: default
   <li><a href="http://sass-lang.com">Sass</a>: CSS preprocessor</li>
   <li><a href="http://bourbon.io">Bourbon</a>: Set of generic Sass mixins</li>
   <li><a href="http://neat.bourbon.io">Neat</a>: Set of grid-based Sass mixins (dependent on Bourbon)</li>
-  <li>Fonts: <a href="http://www.fontsquirrel.com/fonts/bebas-neue">Bebas Neue</a>, <a href="https://github.com/adobe/source-sans-pro">Adobe Source Sans Pro</a>, <a href="https://github.com/adobe/source-code-pro">Adobe Source Code Pro</a></li>
+  <li>Fonts: <a href="http://www.fontsquirrel.com/fonts/bebas-neue">Bebas Neue</a>, <a
+      href="https://github.com/adobe/source-sans-pro">Adobe Source Sans Pro</a>, <a
+      href="https://github.com/adobe/source-code-pro">Adobe Source Code Pro</a></li>
 </ol>
 
 <br />
 
 <article class="post no-border">
     <div class="post-header">
-        <p class="date">Feb 21, 2012</p>
+        <p class="date">20 Aug, 2019</p>
         <h1>Posts</h1>
     </div>
     <div class="post-body">
       <p>
         This is what a post looks like. Straight forward. Date goes above the header. Content goes below the header.
       </p>
-      <p>Etiam porta sem malesuada magna mollis euismod. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+      <p>In this section you can introduce a presentation to the template.</p>
     </div>
 </article>
 
-<h1>Boxes</h1>
+<h1>Topics</h1>
 <div id="projects">
   {% for page in site.pages %}
     {% if page.box == true %}
       {% if page.link %}
-        <a class="project" href="{{ page.link }}">
+        <a class="project" href="{{ site.url }}/{{ site.baseurl }}/{{ page.link }}">
       {% else %}
-        <a class="project" href="{{ page.url | replace: '/index.html', '' }}">
+        <a class="project" href="{{ site.url }}/{{ site.baseurl }}/{{ page.url | replace: '/index.html', '' }}">
       {% endif %}
           <div class="project-header">
               <h2>

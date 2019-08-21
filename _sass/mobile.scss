@@ -73,6 +73,7 @@ h1.hero {
 p {
     line-height: 1.5em;
     margin: 1em 0;
+    display: inline-block;
 }
 
 .wrapper {
@@ -81,7 +82,7 @@ p {
 
 .container {
     @include outer-container;
-    max-width: 780px;
+    max-width: 1000px;
     position: relative;
 }
 
@@ -308,10 +309,6 @@ ul {
 
 .key-selector a.active {
     background-color: $blue;
-}
-
-.button:hover, .button:active {
-    @include box-shadow(0 0 1px 2px rgba(0,0,0,1) inset);
 }
 
 .pagination .button span {
