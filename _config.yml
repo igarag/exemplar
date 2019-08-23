@@ -17,4 +17,4 @@ exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', '.git']
 paginate: 4
 plugins: [jekyll-paginate]
 sass_dir: ./_sass
-baseurl: "/exemplar"
+#baseurl: "/exemplar"
