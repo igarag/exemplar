@@ -42,9 +42,9 @@ This is an example of the default theme I use for my jekyll sites. This theme is
   {% for page in site.pages %}
     {% if page.box == true %}
       {% if page.link %}
-        <a class="project" href="{{ site.url }}/{{ site.baseurl }}/{{ page.link }}">
+        <a class="project" href="{{ site.baseurl }}/{{ page.link }}">
       {% else %}
-        <a class="project" href="{{ site.url }}/{{ site.baseurl }}/{{ page.url | replace: '/index.html', '' }}">
+        <a class="project" href="{{ site.baseurl }}/{{ page.url | replace: '/index.html', '' }}">
       {% endif %}
           <div class="project-header">
               <h2>

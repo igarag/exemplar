@@ -12,7 +12,7 @@ twitter_user: ""
 
 # Default fields. Initially, maintain these fields.
 highlighter: rouge
-permalink: /post/:title
+#permalink: /post/:title
 exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', '.git']
 paginate: 4
 plugins: [jekyll-paginate]
